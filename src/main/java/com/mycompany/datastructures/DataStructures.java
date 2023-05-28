@@ -13,20 +13,17 @@ public class DataStructures {
     public static void main(String[] args) {
         MyLinkedList list = new MyLinkedList();
 
-        list.append(10);
-        list.append(20);
-        list.append(30);
-        list.append(40);
+        list.append(1);
+        list.append(2);
+        list.append(3);
+        list.append(4);
+        list.append(5);
 
-        System.out.println("Initial list:");
+        System.out.println("Original List:");
         list.print();
 
-        // Removing elements by value
-        list.removeVal(20);
-        //list.removeVal(10);
-        //list.removeVal(20);
-
-        System.out.println("Updated list after removals:");
+        System.out.println("Reversed List:");
+        list.reverse();
         list.print();
         
 
