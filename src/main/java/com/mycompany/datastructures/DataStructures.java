@@ -11,21 +11,13 @@ package com.mycompany.datastructures;
 public class DataStructures {
 
     public static void main(String[] args) {
-        MyLinkedList list = new MyLinkedList();
-
-        list.append(1);
-        list.append(2);
-        list.append(3);
-        list.append(4);
-        list.append(5);
-
-        System.out.println("Original List:");
-        list.print();
-
-        System.out.println("Reversed List:");
-        list.reverse();
-        list.print();
+        PriorityQueue priorityQueue = new PriorityQueue();
         
-
+        priorityQueue.enqueue("Task 1", 3);
+        priorityQueue.enqueue("Task 2", 1);
+        priorityQueue.enqueue("Task 3", 5);
+        priorityQueue.enqueue("Task 4", 2);
+        
+        System.out.println(priorityQueue);
     }
 }
